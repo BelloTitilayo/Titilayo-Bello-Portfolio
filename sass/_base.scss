@@ -1,0 +1,54 @@
+//BREAKPOINTS
+$bp-largest: 84.38em; //1350px/16px  => 84.38em
+$bp-large: 78.13em; //1250px/16px => 78.13em
+$bp-big: 66.3em; //1060px/16px => 66.3em
+$bp-medium: 61.3em; //980px/16px => 61.3em
+$bp-md-sm: 51.25em; //820px/16px => 51.25em
+$bp-small: 45em; //720px/16px => 45em
+$bp-smaller: 37.5em; //600px/16px => 37.5em
+$bp-lowest: 28.13em; //450px/16px => 28.13em
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 75%; // 12px/16px => 75%  1rem = 12px
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 68.75%; // 11px/16px => 1rem = 11px
+  }
+
+  @media only screen and (max-width: $bp-lowest) {
+    font-size: 62.5%; // 10px/16px => 1rem = 10px
+  }
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+
+  grid-template-rows: 10vh 90vh repeat(4, -webkit-min-content);
+
+  grid-template-rows: 10vh 90vh repeat(4, min-content);
+  grid-template-columns:
+    minmax(6rem, 8rem) repeat(8, minmax(-webkit-min-content, 14rem))
+    minmax(6rem, 8rem);
+  grid-template-columns:
+    minmax(6rem, 8rem) repeat(8, minmax(min-content, 14rem))
+    minmax(6rem, 8rem);
+
+  @media only screen and (max-width: $bp-md-sm) {
+    grid-template-rows: 10vh repeat(5, -webkit-min-content);
+    grid-template-rows: 10vh repeat(5, min-content);
+  }
+}

@@ -1,0 +1,224 @@
+.heading-primary {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+
+  @media only screen and (max-width: $bp-big) {
+    font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2.85rem;
+  }
+
+  @media only screen and (max-width: $bp-md-sm) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: $bp-lowest) {
+    font-size: 2.47rem;
+  }
+}
+
+.span1 {
+  display: block;
+}
+
+.span2,
+.span3 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.span4 {
+  color: rgb(51, 51, 255);
+}
+
+.heading-secondary {
+  color: rgb(51, 51, 255);
+  font-weight: 700;
+  font-size: 2.1rem;
+  padding: 1rem 0;
+  border-bottom: 2px solid rgb(51, 51, 255);
+
+  display: inline-block;
+  width: 5.7rem;
+
+  grid-column: 2 / 3;
+
+  @media only screen and (max-width: $bp-lowest) {
+    justify-self: flex-start;
+    grid-column: 1 / 2;
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  margin-bottom: 1.5rem;
+  margin-top: 5rem;
+
+  @media only screen and (max-width: $bp-md-sm) {
+    margin-bottom: 1.2rem;
+    margin-top: 4rem;
+  }
+}
+
+.heading-paragraph {
+  font-size: 1.42rem;
+  color: gray;
+
+  @media only screen and (max-width: $bp-md-sm) {
+    font-size: 1.5rem;
+  }
+}
+
+.heading-lowest {
+  font-size: 1.5rem;
+  color: #333;
+  margin-right: auto;
+
+  @media only screen and (max-width: $bp-lowest) {
+    font-size: 1.4rem;
+  }
+}
+
+.wds {
+  width: 4.77rem;
+}
+.heading-wdl {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 2.1rem;
+  text-align: center;
+  color: rgb(51, 51, 255);
+  padding: 1rem;
+  border-bottom: 2px solid rgb(51, 51, 255);
+
+  width: 16%;
+  margin-left: 42%;
+  margin-right: 42%;
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 18%;
+    margin-left: 41%;
+    margin-right: 41%;
+  }
+
+  @media only screen and (max-width: $bp-big) {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 22%;
+    margin-left: 39%;
+    margin-right: 39%;
+  }
+
+  @media only screen and (max-width: $bp-md-sm) {
+    width: 25%;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+  @media only screen and (max-width: $bp-smaller) {
+    width: 41.8%;
+    margin-left: 29.1%;
+    margin-right: 29.1%;
+  }
+}
+
+.heading-wdm {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 2.1rem;
+  text-align: center;
+  color: rgb(51, 51, 255);
+  padding: 1rem 0;
+  border-bottom: 2px solid rgb(51, 51, 255);
+
+  width: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
+
+  @media only screen and (max-width: $bp-md-sm) {
+    width: 15%;
+    margin-left: 42.5%;
+    margin-right: 42.5%;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    width: 22%;
+    margin-left: 39%;
+    margin-right: 39%;
+  }
+
+  @media only screen and (max-width: $bp-lowest) {
+    width: 26%;
+    margin-left: 37%;
+    margin-right: 37%;
+  }
+}
+
+.projects__btn:link,
+.projects__btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: rgb(51, 51, 255);
+  color: #333;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+
+  box-shadow: 0 0.5rem 1rem #333;
+  margin-top: 3rem;
+  text-align: center;
+
+  transition: all 0.1s;
+
+  @media only screen and (max-width: $bp-lowest) {
+    margin-top: 2rem;
+  }
+  &:hover,
+  &:active {
+    transform: scale(1.1);
+  }
+}
+.projects__btn-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav-icon {
+  font-size: 2.8rem;
+  display: none;
+  color: #333;
+  cursor: pointer;
+
+  @media only screen and (max-width: $bp-md-sm) {
+    display: block;
+  }
+}
+
+.active {
+  display: block;
+}
+
+.navbar {
+  grid-column: 3 / 4;
+}
