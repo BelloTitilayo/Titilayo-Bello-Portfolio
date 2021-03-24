@@ -40,15 +40,15 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1000; }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      padding: 0.8rem 3rem; } }
   @media only screen and (max-width: 51.25em) {
     .header {
       display: grid;
       grid-template-columns: 0.6fr 1fr 0.4fr;
       grid-gap: 1.4rem;
       padding: 0.8rem 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding: 0.8rem 3rem; } }
   .header__logo {
     font-weight: 700;
     font-size: 1.5rem;
@@ -118,8 +118,6 @@ body {
     justify-self: end;
     -webkit-animation: moveInBottom 1s ease-out;
     animation: moveInBottom 1s ease-out;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
     -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards; }
   .bigger-header__content {
@@ -342,7 +340,7 @@ body {
   margin-top: 2rem !important; }
   @media only screen and (max-width: 51.25em) {
     .mt {
-      color: gray; } }
+      color: #fff; } }
 
 .heading {
   display: grid;
@@ -584,7 +582,7 @@ body {
 
 .contact-span {
   font-size: 1.5rem;
-  color: #333;
+  color: #fff;
   display: inline-block; }
 
 .contact-icon {
